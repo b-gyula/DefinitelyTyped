@@ -575,11 +575,11 @@ declare namespace Chart {
         afterTickToLabelConversion?(scale?: any): void;
         afterCalculateTickRotation?(scale?: any): void;
         afterFit?(scale?: any): void;
+        categoryPercentage?: number;
+        barPercentage?: number;
     }
 
     interface ChartXAxe extends CommonAxe {
-        categoryPercentage?: number;
-        barPercentage?: number;
         distribution?: 'linear' | 'series';
     }
 
